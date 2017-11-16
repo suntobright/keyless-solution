@@ -29,6 +29,11 @@ To realize keyless proxy, there will be three components needed as follow:
 * OpenSSL support, which will break down the SSL handshaking and wait the proxy server for the data processed by private key. To break down the SSL handshaking,
 OpenSSL needs some modification.
 
+## Keyless server
+The main problem about the source code published by CloudFlare is the certificates used for test is out of date, thus causing the failure during testing. I have renewed the certificates in the `keyless-server\testing` directory.
+
+For more information about how to generate certificates with OpenSSL, please visit [OpenSSL Command-Line HOWTO][3] and [OpenSSL Command Line Utilities][4].
+
 ## Note
 The first version of the project is not finished yet.
 Since it's a part-time entertainment for me, I couldn't guarantee the develop progress.
@@ -39,3 +44,5 @@ Feel free to contact me via [e-mail][2] if you have any questions.
 
 [1]: https://blog.cloudflare.com/keyless-ssl-the-nitty-gritty-technical-details/
 [2]: mailto:suntobright@gmail.com
+[3]: https://www.madboa.com/geek/openssl/
+[4]: https://wiki.openssl.org/index.php/Command_Line_Utilities
